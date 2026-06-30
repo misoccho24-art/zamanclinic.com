@@ -20,31 +20,30 @@
 
         }
 
-        body {
-    background-color: rgb(186, 186, 186);
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
-
-/* This is the magic layer that fixes everything */
+        .body {
+            background-color: rgb(186, 186, 186);
+            background-image: url(Jaman_Clinic.png);
+            background-repeat: no-repeat;                 /* Stops the image from duplicating */
+            background-size: cover;                       /* Forces the image to stretch and cover the whole screen */
+            background-position: center;                  /* Keeps the image centered perfectly */
+            background-attachment: fixed;
+        }
+        /* Style the background div */
 .bg-blur {
     position: fixed;
-    top: -10px;    /* Pulls it slightly out of bounds to hide the blur white edges */
-    left: -10px;   /* Pulls it slightly out of bounds to hide the blur white edges */
-    width: calc(100vw + 20px);  /* Makes it wide enough to cover the screen plus edges */
-    height: calc(100vh + 20px); /* Makes it tall enough to cover the screen plus edges */
-    
-    background-image: url("Jaman_Clinic.png"); /* Your exact image filename */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Jaman_Clinic.png"); /* Your image name here */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
-    filter: blur(5px); /* Change this number to make it more or less blurry */
-    z-index: -1;       /* Places it behind all your text and doctor cards */
-    pointer-events: none; /* Makes sure clicks pass right through it to the cards */
+    filter: blur(8px); /* Adjust the blur here */
+    z-index: -1;       /* Pushes it behind all your text and cards */
 }
-    
+        
         .img {
             transition: 0.3s;
         }
@@ -54,7 +53,7 @@
             border-style: solid;
             border-radius: 3px;
             margin-top: 6px;
-            border-color: #000000;
+            border-color: #2b2b2b;
         }
 
         /* FLEX CONTAINER */
@@ -97,9 +96,9 @@
         .hamburger {
             display: none;
             font-size: 32px;
-            color: #2b2b2b;
+            color: #ffffff;
             cursor: pointer;
-            background-color: #2b2b2b;
+            background-color: #505050;
             border-radius: 2px;
             padding: 5px;
             padding-left: 10px;
@@ -129,51 +128,52 @@
         }
 
         /* RESPONSIVE */
+        
         @media (max-width: 768px) {
-            /* Nav links hidden */
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                right: 20px;
-                top: 80px;
-                background: #505050;
-                padding: 20px;
-                border-radius: 8px;
-                width: 150px;
-                z-index: 9999;
-                transition: 0.3s ease;
-            }
+    /* Hide the sidebar menu by default */
+    #sidebar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 80px;
+        background: #505050;
+        padding: 20px;
+        border-radius: 8px;
+        width: 150px;
+        z-index: 9999;
+        transition: 0.3s ease;
+    }
 
-            /* Show when toggled */
-            .nav-links.open {
-                display: flex;
-            }
+    /* Show the sidebar when toggled open */
+    #sidebar.open {
+        display: flex;
+    }
 
-            /* Show hamburger */
-            .hamburger {
-                display: block;
-                margin-top: 0px;
-                margin-right: 0px;
-                border-radius: 5px;
-            }
+    /* Show hamburger toggle button */
+    .sidebar-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
 
-            .logo a {
-                margin-right: 20px;
-                background-color: transparent;
-            }
+    .logo a {
+        margin-right: 20px;
+        background-color: transparent;
+    }
 
-            .p-account {
-                color: white;
-                font-weight: 800;
-                font-size: 10px;
-                display: block;
-            }
+    .p-account {
+        color: white;
+        font-weight: 800;
+        font-size: 10px;
+        display: block;
+    }
 
-            .nav-loc {
-                margin-left: 1px;
-            }
-        }
+    .nav-loc {
+        margin-left: 1px;
+    }
+}
 
           .nav-list {
             background-color: transparent;
@@ -297,7 +297,7 @@
             font-size: 15px;
             font-family: arial;
             font-weight: 450;
-            color: black;
+            color: rgb(255, 255, 255);
             margin-top: 10px;
             white-space: nowrap;
         }
@@ -305,7 +305,7 @@
         .follows {
             margin-top: 550px;
             font-size: 25px;
-            color: rgb(255, 255, 255);
+            color: black;
         }
 
         .facebook-z {

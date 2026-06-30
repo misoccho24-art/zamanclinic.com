@@ -31,9 +31,10 @@
     <div class="sidebar-toggle" id="sidebarToggle">☰</div>
 
     <nav class="nav-list" id="sidebar">
-    <li><a href="index.html" class="active">Home</a></li>
+        
+    <li><a href="index.html" class="">Home</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="store.html" class="">Calendar</a></li>
+    <li><a href="store.html" class="active">Calendar</a></li>
 </nav>
 
 <div class="filers-div">
@@ -199,32 +200,31 @@
             <p class="f-p">© 2026 Modern Hospital inc.</p>
         </div>
     
-<script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
+        <script>
+    // Grab the elements that actually exist in your HTML
+    const toggle = document.getElementById("sidebarToggle");
+    const sidebar = document.getElementById("sidebar");
 
-    hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-        sidebar.classList.toggle("close");
-    });
+    // Only add the listener if the elements are found on the page
+    if (toggle && sidebar) {
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+        });
+    }
 
-  const toggle = document.getElementById("sidebarToggle");
-  const sidebar = document.getElementById("sidebar");
+    // Keep your redirect function safe and clean
+    function page() {
+        const overlay = document.getElementById("overlay");
+        const loader = document.getElementById("loader");
+        
+        if (overlay) overlay.style.display = "block";
+        if (loader) loader.style.display = "block";
 
-  toggle.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-    navLinks.classList.toggle("close");
-  });
-
-  function page() {
-    overlay.style.display = "block";
-    loader.style.display = "block";
-
-    setTimeout(() => {
-        window.location.href = "store.html";
-    }, 700);
-  }
-
+        setTimeout(() => {
+            window.location.href = "store.html";
+        }, 700);
+    }
 </script>
+
 </body>
 </html>

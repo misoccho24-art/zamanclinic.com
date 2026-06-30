@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+                <nav class="nav">
+    <div class="navdiv">
+
+        <div class="logo"><a href="index.html"><img class="img" src="CORE (9).png" alt=""></a></div>
+
+        <div class="hamburger" id="hamburger"><img src="account_circle_31dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+    </div>
+</nav>
+
+    <div class="sidebar-toggle" id="sidebarToggle">☰</div>
+
+    <nav class="nav-list" id="sidebar">
+    <li><a href="index.html" class="">Home</a></li>
+    <li><a href="store.html" class="">Store</a></li>
+    <li><a href="coins.html" class="">Coins</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="bank.html" class="active">Bank</a></li>
+    <li><a href="ip.html" class="">Ip & Port</a></li>
+</nav>
+
+    <div class="leader">
+
+    <div class="independent">
+        <a href="ending.html">
+                    <div class="in-div7">
+            <img class="untitle" src="Untitled design (8).png" alt="">
+            <p class="rank">1.5M Cash</p>
+            <p class="og">65</p>
+            <p class="dis">50</p>
+
+            <a href="ending.html"><button class="discord11">Buy Now</button></a>
+        </div>
+        </a>
+    </div>
+
+    <div class="indepe">
+ <a href="ending.html">
+            <div class="in-div8">
+            <img class="untitle" src="Untitled design (8).png" alt="">
+            <p class="rank">2.25M Cash</p>
+            <p class="og">120</p>
+            <p class="dis">100</p>
+
+            <a href="ending.html"><button class="discord11">Buy Now</button></a>
+        </div>
+ </a>
+    </div>
+
+    <div class="indep">
+        <a href="ending.html">
+                    <div class="in-div9">
+            <img class="untitle" src="Untitled design (8).png" alt="">
+            <p class="rank">3M Cash</p>
+            <p class="og">175</p>
+            <p class="dis">150</p>
+
+            <a href="ending.html"><button class="discord11">Buy Now</button></a>
+        </div>
+        </a>
+    </div>
+
+    <div class="break"></div>
+    <div class="inde">
+        <a href="ending.html">
+                    <div class="in-div10">
+                    <img class="untitle" src="Untitled design (8).png" alt="">
+            <p class="rank">4M Cash</p>
+            <p class="og">550</p>
+            <p class="dis">500</p>
+
+            <a href="ending.html"><button class="discord11">Buy Now</button></a>
+        </div>
+        </a>
+    </div> 
+
+</div>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        sidebar.classList.toggle("close");
+    });
+
+  const toggle = document.getElementById("sidebarToggle");
+  const sidebar = document.getElementById("sidebar");
+
+  toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+    navLinks.classList.toggle("close");
+  });
+
+</script>
+
+</body>
+</html>

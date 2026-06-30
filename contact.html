@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="body">
+          <nav class="nav">
+    <div class="navdiv">
+
+        <div class="logo"><a href="index.html"><img class="img" src="Untitled design (14).png" alt=""></a></div>
+
+        <div class="hamburger" id="hamburger"><img src="account_circle_31dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+    </div>
+
+        <p>For Serial: 01318-386013</p>
+
+    <p class="nav-loc">Sherpur College gate, Khoarpar road, Sherpur</p>
+</nav>
+
+    <div class="sidebar-toggle" id="sidebarToggle">☰</div>
+
+    <nav class="nav-list" id="sidebar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="store.html" class="active">Contact</a></li>
+    <li><a href="store.html">Calendar</a></li>
+</nav>
+
+    <div class="contact-us">
+        <p class="real-text">Contact Us</p>
+    </div>
+
+    <div class="leader">
+
+    <div class="independent">
+                    <div class="in-div-c">
+            <img class="phone" src="phone_in_talk_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" alt="">
+            <p class="rank">Phone Number</p>
+            <p>📞01780-261010</p>
+            <p>📞01318-386013</p>
+
+
+            </div>
+
+        </div>
+
+    <div class="indepe">
+                    <div class="in-div-c1">
+            <img class="mail" src="mail_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png"">
+            <p class="rank">Email Address</p>
+            <p>suruzzaman91@gmail.com</p>
+        </div>
+    </div>
+
+        <div class="independent">
+                    <div class="in-div-c2">
+            <img class="phone" src="alarm_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" alt="">
+            <p class="rank">Working Hours</p>
+            <p>24/7 Open for Service</p>
+            </div>
+
+        </div>
+
+    <div class="indepe">
+                    <div class="in-div-c3">
+            <img class="mail" src="location_on_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png">
+            <p class="rank">Head Office</p>
+            <p>118 Kalir Bazar, Sherpur Town, Sherpur-2100</p>
+        </div>
+    </div>
+
+</div>
+    
+    <script>
+            hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        sidebar.classList.toggle("close");
+    });
+
+  const toggle = document.getElementById("sidebarToggle");
+  const sidebar = document.getElementById("sidebar");
+
+  toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+    navLinks.classList.toggle("close");
+  });
+    </script>
+</body>
+</html>

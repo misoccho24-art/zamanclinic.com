@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+                <nav class="nav">
+    <div class="navdiv">
+
+        <div class="logo"><a href="index.html"><img class="img" src="CORE (9).png" alt=""></a></div>
+
+        <div class="hamburger" id="hamburger"><img src="account_circle_31dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+    </div>
+</nav>
+
+    <div class="sidebar-toggle" id="sidebarToggle">☰</div>
+
+    <nav class="nav-list" id="sidebar">
+    <li><a href="index.html" class="">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="store.html" class="">Info</a></li>
+    <li><a href="coins.html" class="active">Tips</a></li>
+</nav>
+
+    <div class="leader">
+
+    <div class="independent">
+        <a href="ending.html">
+                    <div class="in-div0">
+            <img class="untitle" src="Untitled design (5).png" alt="">
+            <p class="rank">250 Coins</p>
+            <p class="og">100</p>
+            <p class="dis">70</p>
+
+            <a href="ending.html"><button class="discord12">Buy Now</button></a>
+        </div>
+        </a>
+    </div>
+
+    <div class="indepe">
+ <a href="ending.html">
+            <div class="in-div4">
+            <img class="untitle" src="Untitled design (5).png" alt="">
+            <p class="rank">500 Coins</p>
+            <p class="og">150</p>
+            <p class="dis">100</p>
+
+            <a href="ending.html"><button class="discord12">Buy Now</button></a>
+        </div>
+ </a>
+    </div>
+
+    <div class="indep">
+        <a href="ending.html">
+                    <div class="in-div5">
+            <img class="untitle" src="Untitled design (5).png" alt="">
+            <p class="rank">1000 Coins</p>
+            <p class="og">200</p>
+            <p class="dis">150</p>
+
+            <a href="ending.html"><button class="discord12">Buy Now</button></a>
+        </div>
+        </a>
+    </div>
+
+    <div class="break"></div>
+    <div class="inde">
+        <a href="ending.html">
+                    <div class="in-div6">
+                    <img class="untitle" src="Untitled design (5).png" alt="">
+            <p class="rank">4000 Coins</p>
+            <p class="og">550</p>
+            <p class="dis">500</p>
+
+            <a href="ending.html"><button class="discord12">Buy Now</button></a>
+        </div>
+        </a>
+    </div> 
+
+</div>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        sidebar.classList.toggle("close");
+    });
+
+  const toggle = document.getElementById("sidebarToggle");
+  const sidebar = document.getElementById("sidebar");
+
+  toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+    navLinks.classList.toggle("close");
+  });
+
+</script>
+
+</body>
+</html>

@@ -20,10 +20,31 @@
 
         }
 
-        .body {
-            background-color: rgb(186, 186, 186);
-        }
-        
+        body {
+    background-color: rgb(186, 186, 186);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* This is the magic layer that fixes everything */
+.bg-blur {
+    position: fixed;
+    top: -10px;    /* Pulls it slightly out of bounds to hide the blur white edges */
+    left: -10px;   /* Pulls it slightly out of bounds to hide the blur white edges */
+    width: calc(100vw + 20px);  /* Makes it wide enough to cover the screen plus edges */
+    height: calc(100vh + 20px); /* Makes it tall enough to cover the screen plus edges */
+    
+    background-image: url("Jaman_Clinic.png"); /* Your exact image filename */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    filter: blur(5px); /* Change this number to make it more or less blurry */
+    z-index: -1;       /* Places it behind all your text and doctor cards */
+    pointer-events: none; /* Makes sure clicks pass right through it to the cards */
+}
+    
         .img {
             transition: 0.3s;
         }
@@ -33,7 +54,7 @@
             border-style: solid;
             border-radius: 3px;
             margin-top: 6px;
-            border-color: #2b2b2b;
+            border-color: #000000;
         }
 
         /* FLEX CONTAINER */
@@ -284,7 +305,7 @@
         .follows {
             margin-top: 550px;
             font-size: 25px;
-            color: black;
+            color: rgb(255, 255, 255);
         }
 
         .facebook-z {
@@ -478,7 +499,7 @@
             font-family: arial;
             font-weight: 400;
             font-style: normal;
-            color: black;
+            color: rgb(255, 255, 255);
             margin-top: 50px;
             width: 700px;
             font-size: 40px;
@@ -518,7 +539,7 @@
             margin-top: 30px;
             font-family: bold;
             font-size: 20px;
-            color: black;
+            color: rgb(255, 255, 255);
             width: 700px;
         }
 
@@ -1262,7 +1283,7 @@
     }
 
     .real-text1 {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-family: arial;
         font-size: 53px;
         font-weight: 200;

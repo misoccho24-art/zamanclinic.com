@@ -176,7 +176,7 @@
 }
 
           .nav-list {
-            background-color: transparent;
+            background-color: #20509A;
             width: 160px;
             height: 100vh;
             position: fixed;
@@ -206,13 +206,13 @@
             }
 
             .nav-list li a:hover {
-            background-color: rgb(134, 124, 124);
+            background-color: rgb(46, 131, 181);
             padding-left: 10px;
             }
 
             .nav-list li a.active {
-            color: #2b2b2b;
-            background-color: #a2a2a2dd;
+            color: #ffffff;
+            background-color: #5ba3c4dd;
             }
 
             /* HAMBURGER */
@@ -233,7 +233,7 @@
             }
 
             .sidebar-toggle:hover {
-                background-color: #202020;
+                background-color: #1a5c79;
             }
 
             /* MOBILE */

@@ -177,6 +177,14 @@
     .nav-loc {
         margin-left: 1px;
     }
+
+    .div-li-z1 {
+        margin-left: 50px;
+    }
+
+    .indiv-fix, .in-div-fix1 {
+        width: 375px;
+    }
 }
 
           .nav-list {

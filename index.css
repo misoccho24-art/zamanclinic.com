@@ -15,7 +15,8 @@
             top: 0;
             z-index: 1000;
             margin-top: 0px;
-            width: 1470px;
+            width: 100%;
+            box-sizing: border-box;
             padding-left: 10px;
 
         }
@@ -132,17 +133,20 @@
         @media (max-width: 768px) {
     /* Hide the sidebar menu by default */
     #sidebar {
-        display: none;
+        display: flex;
         flex-direction: column;
-        position: absolute;
         right: 20px;
-        top: 80px;
-        background: #505050;
+        top: 10px;
+        background: #20509a;
         padding: 20px;
-        border-radius: 8px;
-        width: 150px;
+        width: 120px;
         z-index: 9999;
         transition: 0.3s ease;
+        height: 860px;
+    }
+
+    .nav-links {
+        height: 1000px;
     }
 
     /* Show the sidebar when toggled open */
@@ -305,7 +309,7 @@
         .follows {
             margin-top: 550px;
             font-size: 25px;
-            color: black;
+            color: rgb(255, 255, 255);
         }
 
         .facebook-z {
@@ -507,7 +511,7 @@
 
         .fliers-but {
             padding: 10px;
-            background-color: rgb(123, 123, 123);
+            background-color: #20509a;
             font-family: arial;
             font-size: 18px;
             color: rgb(255, 255, 255);
@@ -522,7 +526,7 @@
         }
 
         .fliers-but:hover {
-            background-color: rgb(58, 58, 58);
+            background-color: rgb(56, 133, 143);
         }
 
         .button-div {
@@ -703,6 +707,12 @@
     transition: 0.4s;
     justify-content: center;
     /* Your background-colors, padding, borders, animations go here */
+}
+
+@media (max-width: 768px) {
+    .in-div, .in-div1, .in-div2, .in-div3 {
+        width: 375px;
+    }
 }
 
     .in-div3 {
@@ -1237,7 +1247,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 1456px;
+            width: 100%;
             height: 100%;
             overflow: hidden;
             

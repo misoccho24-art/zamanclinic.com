@@ -381,7 +381,7 @@
     }
 
     .div-li-z1 {
-        margin-left: 100px;
+        margin-left: 40px;
 
     }
 
@@ -718,8 +718,8 @@
 }
 
 @media (max-width: 768px) {
-    .in-div, .in-div1, .in-div2, .in-div3 {
-        width: 375px;
+    .in-div, .in-div1, .in-div2, .in-div3, .in-div-fix, .in-div-fix1 {
+        width: 350px;
     }
 }
 
